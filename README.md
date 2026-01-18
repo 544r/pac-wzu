@@ -2,6 +2,10 @@
 
 一个温州大学教务系统成绩查询和推送工具，支持邮件和微信推送新成绩通知。
 
+## 🌐 在线体验
+
+**直接使用**：https://huggingface.co/spaces/544r/wzu-my-socres
+
 ## ✨ 功能特点
 
 - 🔐 **安全登录** - 支持学号密码登录和快捷密钥登录
@@ -14,13 +18,18 @@
 
 ## 🚀 快速部署
 
-### 方式一：Hugging Face Spaces（推荐）
+### 方式一：复制我的 Space（最简单 ⭐）
 
-1. Fork 本项目到你的 GitHub
-2. 在 [Hugging Face Spaces](https://huggingface.co/spaces) 创建新 Space
-3. 选择 Docker 类型，连接你的 GitHub 仓库
-4. 设置环境变量（见下方配置）
-5. 部署完成！
+1. 访问 https://huggingface.co/spaces/544r/wzu-my-socres
+2. 点击右上角 **⋮** → **Duplicate this Space**
+3. 填写你的 Space 名称
+4. 设置环境变量（Settings → Variables）：
+   - `SECRET_KEY` - 随便填一个密钥
+   - `ENCRYPT_KEY` - 16位加密密钥
+   - `RESEND_API_KEY` - Resend 邮件 API（可选）
+   - `JSONBIN_API_KEY` - JSONBin API（可选，用于持久化存储）
+   - `JSONBIN_BIN_ID` - JSONBin Bin ID（可选）
+5. 点击 **Duplicate Space**，完成！
 
 ### 方式二：本地运行
 
